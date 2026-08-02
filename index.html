@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoWoman Fit | Entrenamiento de Fuerza y Pilates para Mujeres</title>
+  <meta name="description" content="Descubre GoWoman Fit por Purificación López. Centro especializado en entrenamiento de fuerza y Pilates Studio para mujeres de todas las edades. Reserva tu valoración.">
+  
+  <!-- Tailwind CSS por CDN (Gratuito y rápido) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Montserrat + Inter + Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'gwf-purple': '#9B26B6',
+            'gwf-purple-dark': '#7B1D93',
+            'gwf-dark': '#111111',
+            'gwf-light': '#F8F9FA'
+          },
+          fontFamily: {
+            'heading': ['Montserrat', 'sans-serif'],
+            'body': ['Inter', 'sans-serif'],
+            'signature': ['Caveat', 'cursive']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-body text-gray-800 bg-white antialiased">
+
+  <!-- NAVBAR / CABECERA -->
+  <header class="bg-gwf-dark text-white sticky top-0 z-50 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- LOGO -->
+      <a href="#" class="flex flex-col">
+        <span class="font-heading font-extrabold text-2xl tracking-wide text-white">GoWoman<span class="text-gwf-purple">Fit</span></span>
+        <span class="font-signature text-gwf-purple text-lg -mt-1">by Purificación López</span>
+      </a>
+      
+      <!-- NAVEGACIÓN DESKTOP -->
+      <nav class="hidden md:flex space-x-8 text-sm font-medium">
+        <a href="#metodo" class="hover:text-gwf-purple transition">Método GWF</a>
+        <a href="#servicios" class="hover:text-gwf-purple transition">Servicios</a>
+        <a href="#sobre-mi" class="hover:text-gwf-purple transition">Sobre Mí</a>
+        <a href="#contacto" class="hover:text-gwf-purple transition">Contacto</a>
+      </nav>
+
+      <!-- BOTÓN CTA HEADER -->
+      <a href="#contacto" class="bg-gwf-purple hover:bg-gwf-purple-dark text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition">Pedir Cita</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="bg-gwf-dark text-white py-16 md:py-24 px-4 text-center border-b border-gray-800">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="font-heading font-extrabold text-3xl md:text-5xl leading-tight mb-6">
+        Redefine tu Salud y tu Fuerza en un Espacio Diseñado para Ti
+      </h1>
+      <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-8">
+        Combinamos entrenamiento de fuerza adaptado y Pilates Studio para activar tu metabolismo, eliminar dolores y devolverte la vitalidad.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mb-6">
+        <a href="#contacto" class="bg-gwf-purple hover:bg-gwf-purple-dark text-white text-lg font-bold px-8 py-4 rounded-xl shadow-lg transition">
+          Solicita tu Cita de Valoración
+        </a>
+      </div>
+      <p class="text-xs text-gray-400">Atención personalizada para mujeres de 25 a 70 años · Grupos reducidos y 1 a 1</p>
+    </div>
+  </section>
+
+  <!-- MÉTODO / PILARES -->
+  <section id="metodo" class="py-16 bg-gwf-light px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="font-heading text-2xl md:text-4xl font-bold text-gwf-dark mb-4">El Método GoWoman Fit</h2>
+        <p class="text-gray-600 max-w-xl mx-auto">Un espacio seguro basado en la unión, la salud y el entrenamiento inteligente.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+          <div class="w-12 h-12 bg-gwf-purple/10 text-gwf-purple font-bold text-xl rounded-xl flex items-center justify-center mb-6">01</div>
+          <h3 class="font-heading font-bold text-xl mb-3 text-gwf-dark">Fuerza Adaptada</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Ejercicios progresivos para activar tu metabolismo, proteger tus huesos y fortalecer tus músculos sin riesgo de lesión.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+          <div class="w-12 h-12 bg-gwf-purple/10 text-gwf-purple font-bold text-xl rounded-xl flex items-center justify-center mb-6">02</div>
+          <h3 class="font-heading font-bold text-xl mb-3 text-gwf-dark">Pilates Studio</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Corrección postural y trabajo de abdomen profundo para eliminar molestias de espalda y mejorar tu movilidad diaria.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+          <div class="w-12 h-12 bg-gwf-purple/10 text-gwf-purple font-bold text-xl rounded-xl flex items-center justify-center mb-6">03</div>
+          <h3 class="font-heading font-bold text-xl mb-3 text-gwf-dark">Espacio Seguro</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Ambiente exclusivo de sororidad y confianza entre mujeres. Entrena tranquila y guiada en todo momento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="font-heading text-2xl md:text-4xl font-bold text-center text-gwf-dark mb-12">Programas de Entrenamiento</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Servicio 1 -->
+        <div class="border border-gray-200 rounded-2xl p-6 flex flex-col justify-between hover:border-gwf-purple transition">
+          <div>
+            <h3 class="font-heading font-bold text-xl text-gwf-dark mb-2">Personal Trainer 1 a 1</h3>
+            <p class="text-gwf-purple font-semibold text-sm mb-4">Fuerza & Pilates Studio</p>
+            <p class="text-gray-600 text-sm mb-6">Sesiones 100% individuales y adaptadas a tus objetivos, dolores o patologías previas con Purificación López.</p>
+          </div>
+          <a href="#contacto" class="block text-center bg-gwf-dark hover:bg-gwf-purple text-white font-semibold py-3 rounded-xl text-sm transition">Quiero 1 a 1</a>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="border-2 border-gwf-purple rounded-2xl p-6 flex flex-col justify-between relative shadow-md">
+          <span class="bg-gwf-purple text-white text-xs font-bold px-3 py-1 rounded-full absolute -top-3 right-6">Más Popular</span>
+          <div>
+            <h3 class="font-heading font-bold text-xl text-gwf-dark mb-2">Pilates Studio Reducido</h3>
+            <p class="text-gwf-purple font-semibold text-sm mb-4">Clases en Grupo Pequeño</p>
+            <p class="text-gray-600 text-sm mb-6">Atención semi-personalizada en grupos muy reducidos para cuidar tu postura y tonificar en un ambiente íntimo.</p>
+          </div>
+          <a href="#contacto" class="block text-center bg-gwf-purple hover:bg-gwf-purple-dark text-white font-semibold py-3 rounded-xl text-sm transition">Reservar Grupo</a>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="border border-gray-200 rounded-2xl p-6 flex flex-col justify-between hover:border-gwf-purple transition">
+          <div>
+            <h3 class="font-heading font-bold text-xl text-gwf-dark mb-2">Asesoría Online / Híbrida</h3>
+            <p class="text-gwf-purple font-semibold text-sm mb-4">Fuerza & Seguimiento</p>
+            <p class="text-gray-600 text-sm mb-6">Planificación a medida para entrenar desde casa o combinar sesiones presenciales con pautas a distancia.</p>
+          </div>
+          <a href="#contacto" class="block text-center bg-gwf-dark hover:bg-gwf-purple text-white font-semibold py-3 rounded-xl text-sm transition">Más Información</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE PURIFICACIÓN -->
+  <section id="sobre-mi" class="py-16 bg-gwf-dark text-white px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <span class="font-signature text-gwf-purple text-3xl block mb-2">Hola, soy Purificación López</span>
+      <h2 class="font-heading font-bold text-2xl md:text-4xl mb-6">Tu Figura de Confianza en Salud Femenina</h2>
+      <p class="text-gray-300 leading-relaxed mb-6 text-base md:text-lg">
+        "Creé GoWoman Fit para ofrecer a cada mujer, tenga 25 o 70 años, un espacio propio y seguro donde aprender a mover su cuerpo con confianza, sin miedos y libre de dolor. La fuerza no es una cuestión de estética, sino de salud, autonomía y calidad de vida."
+      </p>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE CAPTACIÓN -->
+  <section id="contacto" class="py-16 px-4 bg-gwf-light">
+    <div class="max-w-xl mx-auto bg-white p-8 rounded-3xl shadow-lg border border-gray-100">
+      <div class="text-center mb-8">
+        <h2 class="font-heading font-bold text-2xl md:text-3xl text-gwf-dark mb-2">Empieza Tu Cambio Hoy</h2>
+        <p class="text-gray-600 text-sm">Déjanos tus datos y nos pondremos en contacto contigo para agendar tu valoración.</p>
+      </div>
+
+      <!-- Formulario usando Web3Forms (Gratuito) -->
+      <action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+        <input type="hidden" name="access_key" value="TU_ACCESS_KEY_AQUI">
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-gray-600 mb-1">Nombre Completo</label>
+          <input type="text" name="nombre" required placeholder="Tu nombre" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-gwf-purple">
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold uppercase text-gray-600 mb-1">Teléfono (WhatsApp)</label>
+            <input type="tel" name="telefono" required placeholder="600 000 000" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-gwf-purple">
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase text-gray-600 mb-1">Email</label>
+            <input type="email" name="email" required placeholder="tu@email.com" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-gwf-purple">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-gray-600 mb-1">Servicio de Interés</label>
+          <select name="servicio" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-gwf-purple bg-white">
+            <option>Entrenamiento Personal 1 a 1</option>
+            <option>Pilates Studio Reducido</option>
+            <option>Asesoría Online / Híbrida</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase text-gray-600 mb-1">Horario Preferido de Contacto</label>
+          <select name="horario" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-gwf-purple bg-white">
+            <option>Mañanas (9:00 - 13:00)</option>
+            <option>Tardes (16:00 - 20:00)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full bg-gwf-purple hover:bg-gwf-purple-dark text-white font-bold py-4 rounded-xl shadow-lg transition mt-4">
+          Solicitar Valoración Gratuita
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gwf-dark text-gray-400 py-8 px-4 text-center text-sm border-t border-gray-800">
+    <p class="mb-2">GoWoman Fit by Purificación López © 2026. Todos los derechos reservados.</p>
+    <p class="text-xs text-gray-500">Salud, Fuerza y Pilates para Mujeres.</p>
+  </footer>
+
+</body>
+</html>
