@@ -162,9 +162,12 @@
         <p class="text-gray-600 text-sm">Déjanos tus datos y nos pondremos en contacto contigo para agendar tu valoración.</p>
       </div>
 
-      <!-- Formulario usando Web3Forms (Gratuito) -->
-     <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
-  <input type="hidden" name="access_key" value="66b9eb8b-8591-42f8-89c1-0716da62d976">
+     <!-- Formulario usando Web3Forms (Gratuito) -->
+      <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+        <input type="hidden" name="access_key" value="66b9eb8b-8591-42f8-89c1-0716da62d976">
+        <input type="hidden" name="from_name" value="GoWoman Fit Web">
+        <input type="hidden" name="subject" value="Nueva Solicitud de Valoración">
+
         <div>
           <label class="block text-xs font-bold uppercase text-gray-600 mb-1">Nombre Completo</label>
           <input type="text" name="nombre" required placeholder="Tu nombre" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-gwf-purple">
@@ -198,7 +201,7 @@
           </select>
         </div>
 
-        <button type="submit" class="w-full bg-gwf-purple hover:bg-gwf-purple-dark text-white font-bold py-4 rounded-xl shadow-lg transition mt-4">
+        <button type="submit" class="w-full bg-gwf-purple hover:bg-gwf-purple-dark text-white font-bold py-4 rounded-xl shadow-lg transition mt-4 cursor-pointer">
           Solicitar Valoración Gratuita
         </button>
       </form>
