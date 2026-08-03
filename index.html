@@ -7,43 +7,77 @@
   <meta name="description" content="Estudio de entrenamiento de fuerza femenino y Pilates Studio en Puente Tocinos (Murcia) para mujeres de 25 a 70 años. Reserva tu valoración con Purificación López.">
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Schema.org FAQPage para SEO Enriquecido -->
+  <!-- Schema.org JSON-LD (LocalBusiness + FAQPage) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "¿Cómo corriges mi técnica si entrenamos en la Asesoría Online?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Mediante revisión por vídeo. Me envías vídeos breves ejecutando tus ejercicios y los analizo para corregir tu postura, rango de movimiento y ejecución."
+        "@type": "SportsActivityLocation",
+        "@id": "https://gowomanfit.carrd.co/#organization",
+        "name": "GoWomanFit",
+        "url": "https://gowomanfit.carrd.co/",
+        "logo": "https://gowomanfit.carrd.co/assets/images/image01.jpg",
+        "image": "https://gowomanfit.carrd.co/assets/images/image01.jpg",
+        "telephone": "+34664701739",
+        "priceRange": "€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Puente Tocinos",
+          "addressLocality": "Murcia",
+          "postalCode": "30007",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 37.9922,
+          "longitude": -1.1078
         }
       },
       {
-        "@type": "Question",
-        "name": "¿Necesito disponer de gimnasio o material específico en casa?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "La planificación se adapta 100% a tus recursos. Podemos entrenar en casa con tu peso corporal y bandas elásticas, o bien en tu gimnasio habitual."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Tengo lesiones, dolor de espalda o patologías previas, ¿es seguro para mí?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. Realizamos una valoración inicial previa. El método de Purificación López prioriza la salud articular y la estabilidad del core para entrenar sin riesgo."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Nunca he entrenado fuerza o tengo más de 50 años, ¿me resultará difícil?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Para nada. Trabajo con mujeres de entre 25 y 70 años adaptando las pautas y progresiones desde cero."
-        }
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cómo corriges mi técnica si entrenamos en la Asesoría Online?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mediante nuestra revisión por vídeo. Me envías vídeos breves ejecutando tus ejercicios clave y los analizo minuciosamente para corregir tu postura, rango de movimiento y ejecución."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Necesito disponer de gimnasio o material específico en casa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No es imprescindible. La planificación se adapta 100% a tus recursos disponibles. Podemos entrenar en casa con tu peso corporal y bandas elásticas, o bien en tu gimnasio habitual."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Tengo lesiones, dolor de espalda o patologías previas, ¿es seguro para mí?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutamente. Antes de comenzar realizamos una valoración inicial completa. El método de Purificación López prioriza la salud articular y la estabilidad del core para entrenar sin riesgo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Nunca he entrenado fuerza o tengo más de 50 años, ¿me resultará difícil?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Para nada. Trabajo con mujeres de entre 25 y 70 años adaptando las pautas y progresiones desde cero."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo funciona el seguimiento semanal y el contacto directo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tendrás comunicación fluida conmigo para resolver dudas sobre tus pautas por WhatsApp. Además, realizamos revisiones periódicas de tus progresos."
+            }
+          }
+        ]
       }
     ]
   }
@@ -285,7 +319,7 @@
     }
   </script>
 
-<!-- Snippet Oficial de Integración Voiceflow: Puri-Digital -->
+  <!-- Snippet Oficial de Integración Voiceflow: Puri-Digital -->
   <script type="text/javascript">
     (function(d, t) {
         var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
