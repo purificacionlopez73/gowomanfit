@@ -33,9 +33,10 @@
         "priceRange": "€€",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Puente Tocinos",
-          "addressLocality": "Murcia",
-          "postalCode": "30007",
+          "streetAddress": "C/ Mayor, 53 A, P.I. Camposol",
+          "addressLocality": "Puente Tocinos",
+          "addressRegion": "Murcia",
+          "postalCode": "30006",
           "addressCountry": "ES"
         },
         "geo": {
@@ -279,7 +280,7 @@
                    class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white placeholder-zinc-500 focus:outline-none focus:border-purple-500 transition-colors">
           </div>
 
-          <!-- Campo Email (Añadido para habilitar el Autoresponder) -->
+          <!-- Campo Email -->
           <div>
             <label for="email" class="block text-sm font-semibold text-zinc-300 mb-2">Tu Correo Electrónico *</label>
             <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com" 
@@ -458,21 +459,22 @@
   </script>
 
   <!-- Snippet Oficial de Integración Voiceflow: Puri-Digital -->
- <script type="text/javascript">
+  <script type="text/javascript">
   (function(d, t) {
       var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
       v.onload = function() {
-        window.voiceflow.chat.load({
-          verify: { projectID: '6a6a6ccd06cd2908c8385c44' },
-          url: 'https://general-runtime.voiceflow.com',
-          versionID: 'production',
-          voice: {
-            url: "https://runtime-api.voiceflow.com"
-          }
-        });
-      }
-      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+          window.voiceflow.chat.load({
+              verify: { projectID: '6a6a6ccd06cd2908c8385c44' },
+              url: 'https://general-runtime.voiceflow.com',
+              voice: {
+                  url: 'https://runtime-api.voiceflow.com'
+              }
+          });
+      };
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
+      v.type = "text/javascript";
+      s.parentNode.insertBefore(v, s);
   })(document, 'script');
-</script>
+  </script>
 </body>
 </html>
