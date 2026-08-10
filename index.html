@@ -7,6 +7,7 @@
   <meta name="description" content="Estudio de entrenamiento de fuerza femenino y Pilates Studio en Puente Tocinos (Murcia) para mujeres de 25 a 70 años. Reserva tu valoración con Purificación López.">
   <link rel="canonical" href="https://www.gowomanfit.es/">
 
+  <!-- Tailwind CSS vía CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -246,6 +247,66 @@
       <div class="overflow-hidden rounded-2xl border border-zinc-800 shadow-lg bg-zinc-900/50">
         <img src="entrenamiento-4.jpg" alt="Instalaciones y equipamiento para entrenamiento de fuerza en GoWomanFit" class="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-300" loading="lazy">
       </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN FORMULARIO DE CONTACTO WEB3FORMS -->
+  <section class="max-w-3xl mx-auto px-4 py-16 border-t border-zinc-900">
+    <div class="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-8 shadow-xl">
+      <div class="text-center mb-8">
+        <h2 class="text-3xl font-bold text-white mb-2">Da el primer paso hacia un cuerpo fuerte y sin dolor</h2>
+        <p class="text-zinc-400 text-sm">Agenda tu valoración inicial gratuita. Analizaremos tu caso sin ningún compromiso.</p>
+      </div>
+
+      <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+       <input type="hidden" name="access_key" value="66b9eb8b-8591-42f8-89c1-0716da62d976">
+        <input type="hidden" name="subject" value="Nueva solicitud de valoración - GoWomanFit">
+        <input type="hidden" name="from_name" value="Web GoWomanFit">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Campo Nombre -->
+          <div>
+            <label for="nombre" class="block text-sm font-semibold text-zinc-300 mb-2">Tu Nombre *</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ej. Ana García" 
+                   class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white placeholder-zinc-500 focus:outline-none focus:border-purple-500 transition-colors">
+          </div>
+
+          <!-- Campo Teléfono -->
+          <div>
+            <label for="telefono" class="block text-sm font-semibold text-zinc-300 mb-2">Teléfono / WhatsApp *</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="Ej. 600000000" 
+                   class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white placeholder-zinc-500 focus:outline-none focus:border-purple-500 transition-colors">
+          </div>
+        </div>
+
+        <!-- Campo Objetivo -->
+        <div>
+          <label for="objetivo" class="block text-sm font-semibold text-zinc-300 mb-2">¿Qué servicio te interesa más?</label>
+          <select id="objetivo" name="objetivo" 
+                  class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 transition-colors">
+            <option value="Entrenamiento Personal 1 a 1">Entrenamiento Personal 1 a 1</option>
+            <option value="Pilates Studio (Grupo Reducido)">Pilates Studio (Grupo Reducido)</option>
+            <option value="Asesoría Online / A distancia">Asesoría Online / A distancia</option>
+          </select>
+        </div>
+
+        <!-- Campo Mensaje -->
+        <div>
+          <label for="mensaje" class="block text-sm font-semibold text-zinc-300 mb-2">Mensaje o consulta (opcional)</label>
+          <textarea id="mensaje" name="mensaje" rows="3" placeholder="Cuéntanos si tienes alguna lesión previa o tus horarios de preferencia..." 
+                    class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-white placeholder-zinc-500 focus:outline-none focus:border-purple-500 transition-colors"></textarea>
+        </div>
+
+        <!-- Botón de Envío -->
+        <button type="submit" 
+                class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 rounded-xl text-lg transition-all shadow-lg shadow-purple-950/50">
+          Solicitar Valoración Gratuita
+        </button>
+
+        <p class="text-xs text-zinc-500 text-center mt-4">
+          🔒 Tus datos están 100% seguros con Purificación López. Solo los utilizaremos para responder a tu consulta.
+        </p>
+      </form>
     </div>
   </section>
 
