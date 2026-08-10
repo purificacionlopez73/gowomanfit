@@ -17,20 +17,25 @@
     }
   </style>
   
-  <!-- Schema.org JSON-LD (LocalBusiness + FAQPage) -->
+  <!-- Schema.org JSON-LD Enlazado con Google Business Profile (Paso A) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "SportsActivityLocation",
+        "@type": ["SportsActivityLocation", "HealthClub"],
         "@id": "https://www.gowomanfit.es/#organization",
         "name": "GoWomanFit",
+        "alternateName": "GoWomanFit by Purificación López",
         "url": "https://www.gowomanfit.es/",
         "logo": "https://www.gowomanfit.es/entrenamiento-1.jpg",
         "image": "https://www.gowomanfit.es/entrenamiento-1.jpg",
         "telephone": "+34664701739",
         "priceRange": "€€",
+        "hasMap": "https://maps.google.com/?q=GoWomanFit+Puente+Tocinos+Murcia",
+        "sameAs": [
+          "https://www.instagram.com/gowomanfit"
+        ],
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "C/ Mayor, 53 A, P.I. Camposol",
@@ -43,7 +48,15 @@
           "@type": "GeoCoordinates",
           "latitude": 37.9922,
           "longitude": -1.1078
-        }
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "20:00"
+          }
+        ]
       },
       {
         "@type": "FAQPage",
@@ -397,19 +410,24 @@
     </div>
   </section>
 
-  <!-- FOOTER ESTRATÉGICO -->
+  <!-- FOOTER ESTRATÉGICO CON DIRECCIÓN ENLAZADA A GOOGLE MAPS (Paso B) -->
   <footer class="bg-zinc-950 border-t border-zinc-900 pt-12 pb-24 md:pb-12 text-zinc-400 text-sm">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
       
-      <!-- Columna 1: Marca y Dirección Local (SEO NAP) -->
+      <!-- Columna 1: Marca y Dirección Local (SEO NAP Enlazado) -->
       <div class="space-y-3">
         <span class="text-lg font-black italic text-purple-500 tracking-tight block">GoWomanFit</span>
         <p class="text-xs text-zinc-400 leading-relaxed">
           Estudio de entrenamiento de fuerza femenino y Pilates Studio en Murcia. Adaptado a mujeres de 25 a 70 años.
         </p>
         <p class="text-xs text-zinc-500 leading-relaxed">
-          📍 C/ Mayor, 53 A, P.I. Camposol<br>
-          30006 Puente Tocinos, Murcia<br>
+          📍 <a href="https://maps.google.com/?q=C/+Mayor,+53+A,+P.I.+Camposol,+30006+Puente+Tocinos,+Murcia" 
+                target="_blank" 
+                rel="noopener" 
+                class="hover:text-purple-400 transition-colors underline decoration-purple-500/40">
+            C/ Mayor, 53 A, P.I. Camposol<br>
+            30006 Puente Tocinos, Murcia
+          </a><br>
           📞 <a href="tel:+34664701739" class="hover:text-purple-400 transition-colors">+34 664 70 17 39</a>
         </p>
       </div>
