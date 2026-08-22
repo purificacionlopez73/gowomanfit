@@ -125,6 +125,7 @@
       </div>
       <a href="https://wa.me/34664701739?text=Hola%20Puri,%20quiero%20reservar%20mi%20sesi%C3%B3n%20de%20valoraci%C3%B3n%20gratuita" 
          target="_blank" 
+         rel="noopener"
          class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg font-bold text-sm transition-all shadow-md shadow-purple-950/40">
         Pedir Cita
       </a>
@@ -148,6 +149,7 @@
     <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4">
       <a href="https://wa.me/34664701739?text=Hola%20Puri,%20quiero%20reservar%20mi%20sesi%C3%B3n%20de%20valoraci%C3%B3n%20gratuita" 
          target="_blank" 
+         rel="noopener"
          class="bg-purple-600 hover:bg-purple-700 text-white font-bold px-8 py-4 rounded-xl text-lg shadow-xl shadow-purple-950/60 transition-all">
         Reservar Valoración Gratuita
       </a>
@@ -162,7 +164,12 @@
       "Creé GoWomanFit para ofrecer a cada mujer, tenga 25 o 70 años, un espacio propio y seguro donde aprender a mover su cuerpo con confianza, sin miedos y libre de dolor. La fuerza no es una cuestión de estética, sino de salud, autonomía y calidad de vida."
     </blockquote>
     <div class="max-w-3xl mx-auto">
-      <img src="entrenamiento-3.webp" alt="Entrenamiento de fuerza femenino con Purificación López en GoWomanFit" class="w-full h-auto rounded-2xl border border-zinc-800 shadow-lg" loading="lazy">
+      <img src="entrenamiento-3.webp" 
+           alt="Entrenamiento de fuerza femenino con Purificación López en GoWomanFit" 
+           width="768" 
+           height="512"
+           fetchpriority="high"
+           class="w-full h-auto rounded-2xl border border-zinc-800 shadow-lg object-cover">
     </div>
   </section>
 
@@ -183,6 +190,7 @@
         </div>
         <a href="https://wa.me/34664701739?text=Hola%20Puri,%20quiero%20informaci%C3%B3n%20del%20entrenamiento%20Personal%201%20a%201" 
            target="_blank" 
+           rel="noopener"
            class="block text-center bg-zinc-800 hover:bg-zinc-700 text-white font-semibold py-3 rounded-xl transition-all">
           Quiero 1 a 1
         </a>
@@ -202,6 +210,7 @@
         </div>
         <a href="https://wa.me/34664701739?text=Hola%20Puri,%20quiero%20informaci%C3%B3n%20de%20los%20Grupos%20Reducidos%20de%20Pilates" 
            target="_blank" 
+           rel="noopener"
            class="block text-center bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 rounded-xl transition-all">
           Reservar Grupo
         </a>
@@ -218,6 +227,7 @@
         </div>
         <a href="https://wa.me/34664701739?text=Hola%20Puri,%20quiero%20informaci%C3%B3n%20de%20la%20Asesor%C3%ADa%20Online" 
            target="_blank" 
+           rel="noopener"
            class="block text-center bg-zinc-800 hover:bg-zinc-700 text-white font-semibold py-3 rounded-xl transition-all">
           Más Información
         </a>
@@ -263,10 +273,20 @@
     
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div class="overflow-hidden rounded-2xl border border-zinc-800 shadow-lg bg-zinc-900/50">
-        <img src="entrenamiento-1.webp" alt="Entrenamiento de fuerza femenino y ejecución técnica guiada en GoWomanFit" class="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-300" loading="lazy">
+        <img src="entrenamiento-1.webp" 
+             alt="Entrenamiento de fuerza femenino y ejecución técnica guiada en GoWomanFit" 
+             width="600" 
+             height="320" 
+             loading="lazy" 
+             class="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-300">
       </div>
       <div class="overflow-hidden rounded-2xl border border-zinc-800 shadow-lg bg-zinc-900/50">
-        <img src="entrenamiento-4.webp" alt="Instalaciones y equipamiento para entrenamiento de fuerza en GoWomanFit" class="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-300" loading="lazy">
+        <img src="entrenamiento-4.webp" 
+             alt="Instalaciones y equipamiento para entrenamiento de fuerza en GoWomanFit" 
+             width="600" 
+             height="320" 
+             loading="lazy" 
+             class="w-full h-64 md:h-80 object-cover hover:scale-105 transition-transform duration-300">
       </div>
     </div>
   </section>
@@ -411,17 +431,18 @@
       <p class="text-zinc-400 text-sm max-w-lg mx-auto">Escríbeme directamente por WhatsApp y resolveré tus preguntas sin ningún compromiso.</p>
       <a href="https://wa.me/34664701739?text=Hola%20Puri,%20tengo%20una%20duda%20antes%20de%20empezar" 
          target="_blank" 
+         rel="noopener"
          class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-bold px-6 py-3 rounded-xl transition-all">
         Consultar por WhatsApp
       </a>
     </div>
   </section>
 
-  <!-- FOOTER ESTRATÉGICO CON DIRECCIÓN ENLAZADA A GOOGLE MAPS -->
+  <!-- FOOTER ESTRATÉGICO -->
   <footer class="bg-zinc-950 border-t border-zinc-900 pt-12 pb-24 md:pb-12 text-zinc-400 text-sm">
     <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
       
-      <!-- Columna 1: Marca y Dirección Local (SEO NAP Enlazado) -->
+      <!-- Columna 1: Marca y Dirección Local (SEO NAP Enlazado con ARIA Label) -->
       <div class="space-y-3">
         <span class="text-lg font-black italic text-purple-500 tracking-tight block">GoWomanFit</span>
         <p class="text-xs text-zinc-400 leading-relaxed">
@@ -431,11 +452,12 @@
           📍 <a href="https://maps.google.com/?q=C/+Mayor,+53+A,+P.I.+Camposol,+30006+Puente+Tocinos,+Murcia" 
                 target="_blank" 
                 rel="noopener" 
+                aria-label="Ver ubicación de GoWomanFit en Google Maps"
                 class="hover:text-purple-400 transition-colors underline decoration-purple-500/40">
             C/ Mayor, 53 A, P.I. Camposol<br>
             30006 Puente Tocinos, Murcia
           </a><br>
-          📞 <a href="tel:+34664701739" class="hover:text-purple-400 transition-colors">+34 664 70 17 39</a>
+          📞 <a href="tel:+34664701739" aria-label="Llamar al teléfono de GoWomanFit" class="hover:text-purple-400 transition-colors">+34 664 70 17 39</a>
         </p>
       </div>
 
@@ -443,9 +465,9 @@
       <div class="space-y-2">
         <p class="text-xs font-bold text-white uppercase tracking-wider mb-3">Programas</p>
         <ul class="space-y-2 text-xs">
-          <li><a href="https://wa.me/34664701739?text=Hola%20Puri,%20quiero%20informaci%C3%B3n%20del%20entrenamiento%20Personal%201%20a%201" target="_blank" class="hover:text-purple-400 transition-colors">Entrenamiento Personal 1 a 1</a></li>
-          <li><a href="https://wa.me/34664701739?text=Hola%20Puri,%20quiero%20informaci%C3%B3n%20de%20los%20Grupos%20Reducidos%20de%20Pilates" target="_blank" class="hover:text-purple-400 transition-colors">Pilates Studio (Grupo Reducido)</a></li>
-          <li><a href="https://wa.me/34664701739?text=Hola%20Puri,%20quiero%20informaci%C3%B3n%20de%20la%20Asesor%C3%ADa%20Online" target="_blank" class="hover:text-purple-400 transition-colors">Asesoría Online</a></li>
+          <li><a href="https://wa.me/34664701739?text=Hola%20Puri,%20quiero%20informaci%C3%B3n%20del%20entrenamiento%20Personal%201%20a%201" target="_blank" rel="noopener" class="hover:text-purple-400 transition-colors">Entrenamiento Personal 1 a 1</a></li>
+          <li><a href="https://wa.me/34664701739?text=Hola%20Puri,%20quiero%20informaci%C3%B3n%20de%20los%20Grupos%20Reducidos%20de%20Pilates" target="_blank" rel="noopener" class="hover:text-purple-400 transition-colors">Pilates Studio (Grupo Reducido)</a></li>
+          <li><a href="https://wa.me/34664701739?text=Hola%20Puri,%20quiero%20informaci%C3%B3n%20de%20la%20Asesor%C3%ADa%20Online" target="_blank" rel="noopener" class="hover:text-purple-400 transition-colors">Asesoría Online</a></li>
         </ul>
       </div>
 
@@ -483,7 +505,7 @@
     }
   </script>
 
-  <!-- Snippet Oficial de Integración Voiceflow: Puri-Digital -->
+  <!-- Snippet Oficial de Integración Voiceflow: Puri-Digital (Carga Asíncrona Optimizada) -->
   <script type="text/javascript">
   (function(d, t) {
       var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
@@ -491,12 +513,10 @@
           window.voiceflow.chat.load({
               verify: { projectID: '6a6a6ccd06cd2908c8385c44' },
               url: 'https://general-runtime.voiceflow.com',
-              voice: {
-                  url: 'https://runtime-api.voiceflow.com'
-              }
+              versionID: 'production'
           });
       };
-      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
       v.type = "text/javascript";
       s.parentNode.insertBefore(v, s);
   })(document, 'script');
