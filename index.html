@@ -14,14 +14,13 @@
   <meta property="og:description" content="Estudio de fuerza femenino y Pilates Studio en Puente Tocinos (Murcia) para mujeres de 25 a 70 años. Reserva tu valoración con Purificación López.">
   <meta property="og:image" content="https://www.gowomanfit.es/entrenamiento-1.webp">
 
-  <!-- Tailwind CSS vía CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind CSS optimizado con carga diferida -->
+  <script src="https://cdn.tailwindcss.com" defer></script>
 
   <style>
-    .vfrc-launcher {
-      transform: scale(1.3);
-      transform-origin: bottom right;
-    }
+    /* Estilos Críticos Base para Renderizado Inmediato */
+    body { background-color: #09090b; color: #f4f4f5; font-family: system-ui, -apple-system, sans-serif; }
+    .vfrc-launcher { transform: scale(1.3); transform-origin: bottom right; }
   </style>
   
   <!-- Schema.org JSON-LD Enlazado con Google Business Profile -->
@@ -452,7 +451,7 @@
           📍 <a href="https://maps.google.com/?q=C/+Mayor,+53+A,+P.I.+Camposol,+30006+Puente+Tocinos,+Murcia" 
                 target="_blank" 
                 rel="noopener" 
-                aria-label="Ver ubicación de GoWomanFit en Google Maps"
+                aria-label="Ver dirección de GoWomanFit en Google Maps"
                 class="hover:text-purple-400 transition-colors underline decoration-purple-500/40">
             C/ Mayor, 53 A, P.I. Camposol<br>
             30006 Puente Tocinos, Murcia
@@ -505,21 +504,25 @@
     }
   </script>
 
-  <!-- Snippet Oficial de Integración Voiceflow: Puri-Digital (Carga Asíncrona Optimizada) -->
+  <!-- Snippet Oficial Voiceflow con Carga Asíncrona Diferida -->
   <script type="text/javascript">
-  (function(d, t) {
-      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-      v.onload = function() {
-          window.voiceflow.chat.load({
-              verify: { projectID: '6a6a6ccd06cd2908c8385c44' },
-              url: 'https://general-runtime.voiceflow.com',
-              versionID: 'production'
-          });
-      };
-      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
-      v.type = "text/javascript";
-      s.parentNode.insertBefore(v, s);
-  })(document, 'script');
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+              window.voiceflow.chat.load({
+                  verify: { projectID: '6a6a6ccd06cd2908c8385c44' },
+                  url: 'https://general-runtime.voiceflow.com',
+                  versionID: 'production'
+              });
+          };
+          v.src = "https://cdn.voiceflow.com/widget/bundle.mjs";
+          v.type = "text/javascript";
+          s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    }, 1200);
+  });
   </script>
 </body>
 </html>
