@@ -20,7 +20,6 @@
   <style>
     /* Estilos Críticos Base para Renderizado Inmediato */
     body { background-color: #09090b; color: #f4f4f5; font-family: system-ui, -apple-system, sans-serif; }
-    .vfrc-launcher { transform: scale(1.3); transform-origin: bottom right; }
   </style>
   
   <!-- Schema.org JSON-LD Enlazado con Google Business Profile -->
@@ -504,14 +503,15 @@
     }
   </script>
 
- <!-- Snippet Oficial Voiceflow -->
+  <!-- Snippet Voiceflow Oficial -->
   <script type="text/javascript">
     (function(d, t) {
         var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
         v.onload = function() {
             window.voiceflow.chat.load({
                 verify: { projectID: '6a6a6ccd06cd2908c8385c45' },
-                url: 'https://general-runtime.voiceflow.com'
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
             });
         };
         v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs";
